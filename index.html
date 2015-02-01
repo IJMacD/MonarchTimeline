@@ -1,0 +1,50 @@
+<style>
+  * {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+  }
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  tr.label td {
+    background: linear-gradient(270deg, #666, #666 1px, #fff 1px, #fff);
+    font-size: 10px;
+    padding-right: 5px;
+    text-align: right;
+  }
+  tr:nth-child(odd) {
+    background-color: #f8f8f8;
+  }
+  tr:hover {
+    background-color: #ffffC8;
+  }
+  td {
+    margin: 0;
+    padding: 0;
+    width: 1px;
+  }
+  td:first-child {
+    width: 200px;
+  }
+  td:nth-child(100n+74) {
+    background-color: #666;
+  }
+  td.alive {
+    background-color: #ccc;
+  }
+  td.reign-england {
+    background-color: #f66;
+  }
+  td.reign-scotland {
+    background-color: #66f;
+  }
+  td.reign-england.reign-scotland {
+    background: linear-gradient(to bottom, #f66, #f66 50%, #66f 50%, #66f);
+  }
+  td.reign-britain {
+    background-color: #f6f;
+  }
+</style>
+<table></table>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/grid.es6"></script>
